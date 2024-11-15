@@ -12,9 +12,11 @@
     </header>
     <main>
         <?php 
-            $nome = $_GET["nome"] ?? "Sem nome";
-            $sobrenome = $_GET["sobrenome"] ?? "Sem sobrenome";
-            echo "<p>É um prazer te conhecer, <strong>$nome $sobrenome</strong> ! este é o meu site</p>";
+            $num = $_GET["numero"];
+            $ant = $num - 1;
+            $suc = $num + 1;
+            echo "<p>O antecessor de $num é $ant e o sucessor de $num é $suc</p>";
+
         ?>
         <p><a href="javascript:history.go(-1)">Voltar para a página anterior</a></p>
     </main>
